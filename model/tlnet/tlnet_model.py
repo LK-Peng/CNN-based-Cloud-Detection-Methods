@@ -2,12 +2,12 @@
 
 import torch.nn.functional as F
 
-from .tlunet_parts import *
+from .tlnet_parts import *
 
 
-class TLUNet(nn.Module):
+class TLNet(nn.Module):
     def __init__(self, n_channels, n_classes, dilations=[1, 1, 1, 1]):
-        super(TLUNet, self).__init__()
+        super(TLNet, self).__init__()
         self.n_channels = n_channels
         self.n_classes = n_classes
 

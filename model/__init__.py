@@ -1,8 +1,8 @@
 from .deeplab import DeepLab
 from .mfcnn import MFCNN
 from .mscff import MSCFF
-from .msunet import MSUNet
-from .tlunet import TLUNet
+from .munet import MUNet
+from .tlnet import TUNet
 from .unet import UNet
 from .unet_3 import UNet_3
 from .unet_2 import UNet_2
@@ -23,10 +23,10 @@ def get_network(args):
         net = MFCNN(n_channels=args.in_channels, n_classes=args.num_classes, dropout_p=args.dropout_p)
     elif args.net == 'MSCFF':
         net = MSCFF(n_channels=args.in_channels, n_classes=args.num_classes)
-    elif args.net == 'MSUNet':
-        net = MSUNet(n_channels=args.in_channels, n_classes=args.num_classes)
-    elif args.net == 'TLUNet':
-        net = TLUNet(n_channels=args.in_channels, n_classes=args.num_classes)
+    elif args.net == 'MUNet':
+        net = MUNet(n_channels=args.in_channels, n_classes=args.num_classes)
+    elif args.net == 'TLNet':
+        net = TLNet(n_channels=args.in_channels, n_classes=args.num_classes)
     elif args.net == 'UNet':
         net = UNet(n_channels=args.in_channels, n_classes=args.num_classes, bilinear=False)
     elif args.net == 'UNetS3':

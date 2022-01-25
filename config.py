@@ -12,8 +12,8 @@ def get_config_tr(net_name):
     # add network information
     # ----------------------- #
     parser.add_argument('--net', type=str, default='{}'.format(net_name),
-                        choices=['DeeplabV3Plus', 'MFCNN', 'MSCFF', 'MSUNet',
-                                 'TLUNet', 'UNet', 'UNet-3', 'UNet-2', 'UNet-1',
+                        choices=['DeeplabV3Plus', 'MFCNN', 'MSCFF', 'MUNet',
+                                 'TLNet', 'UNet', 'UNet-3', 'UNet-2', 'UNet-1',
                                  'UNet-dilation', 'UNetS3', 'UNetS2', 'UNetS1'],
                         help='network name (default: ?)')
     parser.add_argument('--in-channels', type=int, default=8,
@@ -190,7 +190,7 @@ def get_config_tr(net_name):
                              '-seed' + str(args.seed)
         elif args.net == 'UNet-dilation':
             args.checkname = args.net + \
-                             '-dilation' + str(args.dilation) + \
+                             '-UNetD' + str(args.dilation) + \
                              '-in_channels' + str(args.in_channels) + \
                              '-lr' + str(args.lr) + \
                              '-batch' + str(args.batch_size) + \
@@ -215,8 +215,8 @@ def get_config_test(net_name):
     # add network information
     # ----------------------- #
     parser.add_argument('--net', type=str, default='{}'.format(net_name),
-                        choices=['DeeplabV3Plus', 'MFCNN', 'MSCFF', 'MSUNet',
-                                 'TLUNet', 'UNet', 'UNet-3', 'UNet-2', 'UNet-1',
+                        choices=['DeeplabV3Plus', 'MFCNN', 'MSCFF', 'MUNet',
+                                 'TLNet', 'UNet', 'UNet-3', 'UNet-2', 'UNet-1',
                                  'UNet-dilation', 'UNetS3', 'UNetS2', 'UNetS1'],
                         help='network name (default: ?)')
     parser.add_argument('--in-channels', type=int, default=8,
@@ -286,10 +286,10 @@ def get_config_test(net_name):
                         help='image width')
     parser.add_argument('--test-root', type=str,
                         default='./example/test/Images',
-                        help='image root of test set')  # '/opt/LandsatCOCOV0.0_2/test/Images'
+                        help='image root of test set')
     parser.add_argument('--test-list', type=str,
                         default='./example/test/test.txt',
-                        help='image list of test set')  # '/opt/LandsatCOCOV0.0_2/test/test.txt'
+                        help='image list of test set')
     parser.add_argument('--no-gt', action='store_true', default=False,
                         help='no available ground truth')
     parser.add_argument('--mean', type=str,
@@ -350,11 +350,11 @@ def get_config_erf(net_name):
     # add network information
     # ----------------------- #
     parser.add_argument('--net', type=str, default='{}'.format(net_name),
-                        choices=['DeeplabV3Plus', 'MFCNN', 'MSCFF', 'MSUNet',
-                                 'TLUNet', 'UNet', 'UNet-3', 'UNet-2', 'UNet-1',
+                        choices=['DeeplabV3Plus', 'MFCNN', 'MSCFF', 'MUNet',
+                                 'TLNet', 'UNet', 'UNet-3', 'UNet-2', 'UNet-1',
                                  'UNet-dilation', 'UNetS3', 'UNetS2', 'UNetS1'],
                         help='network name (default: ?)')
-    parser.add_argument('--in-channels', type=int, default=6,
+    parser.add_argument('--in-channels', type=int, default=8,
                         help='number of input channels')
     # DeeplabV3Plus
     parser.add_argument('--backbone', type=str, default='resnet',
@@ -412,10 +412,10 @@ def get_config_erf(net_name):
                         help='the number of classes (default:2)')
     parser.add_argument('--img-root', type=str,
                         default='./example/test/Images',
-                        help='image root of train set')  # '/opt/LandsatCOCOV0.0_2/test/Images'
+                        help='image root of train set')
     parser.add_argument('--pixel-list', type=str,
                         default='./erf/selected_pixel_all.json',
-                        help='image list of train set')  # '/home/clouddt/XAI/dataFinal/erf/selected_pixel_all.json'
+                        help='image list of train set')
     parser.add_argument('--mean', type=str,
                         default='0.432, 0.398, 0.411, 0.479, 0.240, 0.192, 0.037, 268.051',
                         help='mean of each channel (used in data normalization), \

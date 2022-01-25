@@ -1,11 +1,11 @@
 """ Full assembly of the parts to form the complete network. """
 
-from .msunet_parts import *
+from .munet_parts import *
 
 
-class MSUNet(nn.Module):
+class MUNet(nn.Module):
     def __init__(self, n_channels, n_classes):
-        super(MSUNet, self).__init__()
+        super(MUNet, self).__init__()
         self.n_channels = n_channels
         self.n_classes = n_classes
 

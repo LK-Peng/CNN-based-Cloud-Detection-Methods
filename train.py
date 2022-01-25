@@ -244,8 +244,8 @@ class Trainer(object):
 
 
 def main():
-    # choices=['DeeplabV3Plus', 'MFCNN', 'MSCFF', 'MSUNet', 'TLUNet', 'UNet', 'UNet-3', 'UNet-2', 'UNet-1', 'UNet-dilation', 'UNetS3', 'UNetS2', 'UNetS1']
-    args = get_config_tr('TLUNet')
+    # choices=['DeeplabV3Plus', 'MFCNN', 'MSCFF', 'MUNet', 'TLNet', 'UNet', 'UNet-3', 'UNet-2', 'UNet-1', 'UNet-dilation', 'UNetS3', 'UNetS2', 'UNetS1']
+    args = get_config_tr('TLNet')
     print(args)
     torch.manual_seed(args.seed)  # set seed for the CPU
     np.random.seed(args.seed)
