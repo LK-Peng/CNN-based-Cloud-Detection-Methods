@@ -1,0 +1,8 @@
+Barren_05_0208.tif
+Forest_00_1008.tif
+GrassCrops_01_0413.tif
+Shrubland_01_0508.tif
+SnowIce_11_1123.tif
+Urban_03_0619.tif
+Water_11_0728.tif
+Wetlands_07_1826.tif
