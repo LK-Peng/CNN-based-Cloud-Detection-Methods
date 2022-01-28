@@ -8,12 +8,33 @@
 
 
 
-The links of the trained models are as follows:
-|Input Band Number|Download Link|Password|
-|:-:|:-:|:-:|
-|8|[Baidu Netdisk](https://pan.baidu.com/s/1obbeQlKybN40EW5lO6XUqQ?pwd=3tre)|3tre|
-|6|[Baidu Netdisk](https://pan.baidu.com/s/1xAf6PnOfokroxmcQlIUhUA?pwd=m6nt)|m6nt|
-|4|[Baidu Netdisk](https://pan.baidu.com/s/1nYHaIWZ0aA3MsxqHdviG5Q?pwd=qy48)|qy48|
+* The supported networks are as follows:
+
+|Method|Reference|
+|:-:|:-:|
+|TL-Net|[Transferring deep learning models for cloud detection between Landsat-8 and Proba-V](https://www.sciencedirect.com/science/article/pii/S0924271619302801)|
+|MUNet|[Multi-sensor cloud and cloud shadow segmentation with a convolutional neural network](https://www.sciencedirect.com/science/article/pii/S0034425719302159)|
+|UNet|[U-net: Convolutional networks for biomedical image segmentation](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28)|
+|MF-CNN|[Cloud detection in remote sensing images based on multiscale features-convolutional neural network](https://ieeexplore.ieee.org/document/8625476)|
+|MSCFF|[Deep learning based cloud detection for medium and high resolution remote sensing images of different sensors](https://www.sciencedirect.com/science/article/pii/S0924271619300565)|
+|DeepLabv3+|[Encoder-decoder with atrous separable convolution for semantic image segmentation](https://arxiv.org/abs/1802.02611)|
+|UNet-1|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
+|UNet-2|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
+|UNet-3|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
+|UNet-D2|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
+|UNet-D4|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
+|UNet-S3|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
+|UNet-S2|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
+|UNet-S1|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
+
+
+* The links of the trained models are as follows:
+
+|Input Band Number|Band|Download Link|Password|
+|:-:|:-:|:-:|:-:|
+|8|red/green/blue/NIR/SWIR1/SWIR2/cirrus/TIR1|[Baidu Netdisk](https://pan.baidu.com/s/1obbeQlKybN40EW5lO6XUqQ?pwd=3tre)|3tre|
+|6|red/green/blue/NIR/SWIR1/SWIR2|[Baidu Netdisk](https://pan.baidu.com/s/1xAf6PnOfokroxmcQlIUhUA?pwd=m6nt)|m6nt|
+|4|red/green/blue/NIR|[Baidu Netdisk](https://pan.baidu.com/s/1nYHaIWZ0aA3MsxqHdviG5Q?pwd=qy48)|qy48|
 
 The trained model for the input data of 8 channels can also be downloaded from **[Google Drive](https://drive.google.com/drive/folders/1Av1Gl3WEug_G2UC4WZgddI1YVdvCiwfW?usp=sharing)**
 
@@ -90,5 +111,6 @@ Follow steps below to train your model
 
 
 ### Acknowledgement
-[DeepLab-V3-Plus](https://github.com/jfzhang95/pytorch-deeplab-xception)
-[UNet](https://github.com/milesial/Pytorch-UNet)
+* [DeepLab-V3-Plus](https://github.com/jfzhang95/pytorch-deeplab-xception)
+
+* [UNet](https://github.com/milesial/Pytorch-UNet)
