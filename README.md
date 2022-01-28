@@ -84,3 +84,11 @@ Follow steps below to train your model
 0. [inference.py](https://github.com/LK-Peng/CNN-based-Cloud-Detection-Methods/blob/main/inference.py) is used for predicting cloud detection results and output accuracies.
 
 1. [erf.py](https://github.com/LK-Peng/CNN-based-Cloud-Detection-Methods/blob/main/erf.py) is used for computing the effective receptive field
+
+2. [comparator.py](https://github.com/LK-Peng/CNN-based-Cloud-Detection-Methods/blob/main/comparator.py) is used for computing the accuracies of the predicted results.
+
+
+
+### Acknowledgement
+[DeepLab-V3-Plus](https://github.com/jfzhang95/pytorch-deeplab-xception)
+[UNet](https://github.com/milesial/Pytorch-UNet)
