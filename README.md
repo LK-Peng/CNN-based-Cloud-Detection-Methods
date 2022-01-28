@@ -18,14 +18,14 @@
 |MF-CNN|[Cloud detection in remote sensing images based on multiscale features-convolutional neural network](https://ieeexplore.ieee.org/document/8625476)|
 |MSCFF|[Deep learning based cloud detection for medium and high resolution remote sensing images of different sensors](https://www.sciencedirect.com/science/article/pii/S0924271619300565)|
 |DeepLabv3+|[Encoder-decoder with atrous separable convolution for semantic image segmentation](https://arxiv.org/abs/1802.02611)|
-|UNet-1|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
-|UNet-2|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
-|UNet-3|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
-|UNet-D2|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
-|UNet-D4|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
-|UNet-S3|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
-|UNet-S2|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
-|UNet-S1|Understanding the Role of Receptive Field of CNN for Cloud Detection in Landsat 8 OLI Imagery (Under Review)|
+|UNet-1|Understanding the Role of Receptive Field of Convolutional Neural Network for Cloud Detection in Landsat 8 OLI Imagery|
+|UNet-2|Understanding the Role of Receptive Field of Convolutional Neural Network for Cloud Detection in Landsat 8 OLI Imagery|
+|UNet-3|Understanding the Role of Receptive Field of Convolutional Neural Network for Cloud Detection in Landsat 8 OLI Imagery|
+|UNet-D2|Understanding the Role of Receptive Field of Convolutional Neural Network for Cloud Detection in Landsat 8 OLI Imagery|
+|UNet-D4|Understanding the Role of Receptive Field of Convolutional Neural Network for Cloud Detection in Landsat 8 OLI Imagery|
+|UNet-S3|Understanding the Role of Receptive Field of Convolutional Neural Network for Cloud Detection in Landsat 8 OLI Imagery|
+|UNet-S2|Understanding the Role of Receptive Field of Convolutional Neural Network for Cloud Detection in Landsat 8 OLI Imagery|
+|UNet-S1|Understanding the Role of Receptive Field of Convolutional Neural Network for Cloud Detection in Landsat 8 OLI Imagery|
 
 
 * The links of the trained models are as follows:
@@ -41,7 +41,7 @@ The trained model for the input data of 8 channels can also be downloaded from *
 
 
 ### Introduction
-This is a PyTorch(1.7.1) implementation of varied convolutional neural networks (CNNs) for cloud detection in Landsat 8 OLI imagery. Currently, we train these networks using [L8 Biome](https://landsat.usgs.gov/landsat-8-cloud-cover-assessment-validation-data) dataset. The related paper aims to understand the role of receptive field of CNN for cloud detection in Landsat 8 OLI imagery and is under review.
+This is a PyTorch(1.7.1) implementation of **varied convolutional neural networks (CNNs) for cloud detection in Landsat 8 OLI imagery**. Currently, we train these networks using [L8 Biome](https://landsat.usgs.gov/landsat-8-cloud-cover-assessment-validation-data) dataset. **The related paper** aims to **understand the role of receptive field of CNN for cloud detection in Landsat 8 OLI imagery** and is under review.
 
 
 
